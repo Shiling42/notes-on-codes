@@ -47,3 +47,9 @@ Out[3]= {0.424537, 0.500212, 0.799267}
 
 Out[4]= {0.541989, 0.541989, 0.541989}
 ```
+
+## Theme with linestyle
+
+```Mathematica
+PlotTheme -> {"Scientific", "DashedLines"}
+```
