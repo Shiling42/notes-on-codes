@@ -58,3 +58,9 @@ Out[3]= {0.424537, 0.500212, 0.799267}
 
 Out[4]= {0.541989, 0.541989, 0.541989}
 ```
+
+### Joint string and variables
+
+```mathematica
+dTlist = Table[StringForm["\[CapitalDelta]T=``", i ], {i, 1, 3}];
+```
