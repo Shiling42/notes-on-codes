@@ -1,10 +1,19 @@
 ---
 title: Mathematica
 ---
+## Plot Tricks
+
+### Theme with linestyle
+
+```Mathematica
+PlotTheme -> {"Scientific", "DashedLines"}
+```
 
 
+## Math and Models 
 
-## Basin of attraction
+### Basin of attraction
+
 ```Mathematica
 tmax = 10;
 tol = 0.01;
@@ -35,7 +44,9 @@ Manipulate[
 
 ```
 
-## Rule and RuleDelayed
+## General tricks
+
+### Rule and RuleDelayed
 
 The "rule" replacement replace the variables after evaluated, however, the "ruledelayed" replace the variables and then the evaluation starts.
 
@@ -46,10 +57,4 @@ In[3]:= {x, x, x} /. x :> RandomReal[]
 Out[3]= {0.424537, 0.500212, 0.799267}
 
 Out[4]= {0.541989, 0.541989, 0.541989}
-```
-
-## Theme with linestyle
-
-```Mathematica
-PlotTheme -> {"Scientific", "DashedLines"}
 ```

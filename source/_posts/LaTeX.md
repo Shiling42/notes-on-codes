@@ -2,17 +2,43 @@
 title: LaTeX
 ---
 
-
-## reaction arrows
+## Math
+### reaction arrows
 
 ```LaTeX
 \underset{k_b}{\stackrel{k_f}{\rightleftharpoons}}
 ```
-
-## Color text
-
+## General
+### Color text
 ```LaTeX
 \usepackage{xcolor}
 \color{red}{}
 ```
 
+
+## Figures
+### Basic figure
+```LaTeX
+\begin{figure}
+\includegraphics[width=.9\columnwidth]{*}
+\caption{}
+\label{fig:*}
+\end{figure}
+```
+### Subfigure
+```LaTeX
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{.8\columnwidth}
+        \includegraphics[width=\linewidth]{}
+        \caption{}
+        \label{fig:a}
+    \end{subfigure}
+    \begin{subfigure}[b]{.49\columnwidth}
+        \includegraphics[width=1\linewidth]{}
+        \caption{}
+    \end{subfigure}
+    \caption{} 
+    \label{fig:1}
+\end{figure}
+```
