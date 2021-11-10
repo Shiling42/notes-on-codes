@@ -9,6 +9,11 @@ title: Mathematica
 PlotTheme -> {"Scientific", "DashedLines"}
 ```
 
+### Vertical lines in a plot
+
+```mathematica
+Epilog -> {Line[{{x0,y0}, {x1,y1}}]}
+```
 
 ## Math and Models 
 
