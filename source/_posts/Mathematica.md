@@ -15,6 +15,26 @@ PlotTheme -> {"Scientific", "DashedLines"}
 Epilog -> {Line[{{x0,y0}, {x1,y1}}]}
 ```
 
+### Legend size
+
+```mathematica
+LabelStyle -> 
+ Directive[FontFamily -> "Helvetica", Black, FontSize -> 15]
+```
+
+### Frame ticks and labels size
+
+```mathematica
+FrameStyle -> Directive[Black, FontSize -> 15]
+```
+
+### Latex input
+
+```Mathe
+<< MaTeX`
+MaTeX["\sin{x}"]
+```
+
 ## Math and Models 
 
 ### Basin of attraction
