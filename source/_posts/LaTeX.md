@@ -15,11 +15,19 @@ title: LaTeX
 \color{red}{}
 ```
 
+### Switch to single column appendix
+```LaTeX
+\onecolumn
+\appendix
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+```
 
 ## Figures
 ### Basic figure
 ```LaTeX
 \begin{figure}
+\centering
 \includegraphics[width=.9\columnwidth]{*}
 \caption{}
 \label{fig:*}
