@@ -22,6 +22,12 @@ LabelStyle ->
  Directive[FontFamily -> "Helvetica", Black, FontSize -> 15]
 ```
 
+### Colorbar Legend
+
+```mathematica
+PlotLegends -> BarLegend[Automatic, LegendLabel -> "z"]
+```
+
 ### Frame ticks and labels size
 
 ```mathematica
