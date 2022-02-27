@@ -34,6 +34,12 @@ PlotLegends -> BarLegend[Automatic, LegendLabel -> "z"]
 FrameStyle -> Directive[Black, FontSize -> 15]
 ```
 
+### Unify and resize fig
+
+```mathematica
+Rasterize[,RasterSize -> 15]
+```
+
 ### Latex input
 
 ```Mathe
