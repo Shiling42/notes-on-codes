@@ -12,3 +12,21 @@ title: bash
 
 ```
 
+### User and user setup
+
+```bash
+who
+```
+
+### Setup a new user
+
+```bash
+ useradd [username]
+```
+
+### Change to other user
+
+```bash
+su - user2
+```
+
