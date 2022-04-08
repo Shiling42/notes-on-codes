@@ -42,9 +42,18 @@ Rasterize[,RasterSize -> 15]
 
 ### Latex input
 
-```Mathe
+```Mathematica
 << MaTeX`
 MaTeX["\sin{x}"]
+```
+
+### Multiple figures in a single plot
+```Mathematica
+<< MaTeX`
+Column@{
+Row@{
+}
+}
 ```
 
 ## Math and Models 
