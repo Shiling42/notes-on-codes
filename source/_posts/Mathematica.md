@@ -49,7 +49,6 @@ MaTeX["\sin{x}"]
 
 ### Multiple figures in a single plot
 ```Mathematica
-<< MaTeX`
 Column@{
 Row@{
 }
