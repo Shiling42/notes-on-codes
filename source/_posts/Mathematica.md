@@ -55,6 +55,26 @@ Row@{
 }
 ```
 
+## Functional programming
+
+### Basic use of function
+```Mathematica
+f[x_,y_] := 
+```
+
+### Map and apply
+```Mathematica
+f[x_,y_] :=
+f@@{x,y}
+
+f[x_] :=
+f/@x
+```
+
+### For loop
+```Mathematica
+For[With{},..,..]
+```
 ## Math and Models 
 
 ### Basin of attraction
