@@ -14,7 +14,10 @@ PlotTheme -> {"Scientific", "DashedLines"}
 ```mathematica
 Epilog -> {Line[{{x0,y0}, {x1,y1}}]}
 ```
-
+### ListPlot: dots -> line
+```Mathematica
+Joined -> True
+```
 ### Legend size
 
 ```mathematica
@@ -54,6 +57,7 @@ Row@{
 }
 }
 ```
+
 
 ## Functional programming
 
