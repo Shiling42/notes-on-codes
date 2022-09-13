@@ -34,7 +34,7 @@ PlotLegends -> BarLegend[Automatic, LegendLabel -> "z"]
 ### Frame ticks and labels size
 
 ```mathematica
-FrameStyle -> Directive[Black, FontSize -> 15]
+FrameStyle -> Directive[Black, FontSize -> 15, Thick]
 ```
 
 ### Unify and resize fig
