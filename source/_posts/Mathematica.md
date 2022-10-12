@@ -3,6 +3,7 @@ title: Mathematica
 ---
 ## Plot Tricks
 
+
 ### Theme with linestyle
 
 ```Mathematica
@@ -58,6 +59,31 @@ Row@{
 }
 ```
 
+### Stream and countour plot 
+```Mathematica
+With[
+  {reactions = { , },
+  Show[
+   StreamPlot[
+    Evaluate[
+     {
+      reactions[[1]], reactions[[2]]
+      }
+     ],
+    {r, 0, 1}, {s, 0, 1}
+    ],
+   ContourPlot[
+    Evaluate[
+     {
+      0 == reactions[[1]],
+      0 == reactions[[2]]
+      }
+     ],
+    {r, 0, 1}, {s, 0, 1}
+    ]
+   ]
+  ],
+```
 
 ## Functional programming
 
