@@ -5,9 +5,14 @@ title: LaTeX
 ## Math
 ### reaction arrows
 
-```LaTeX
+````LaTeX
 \underset{k_b}{\stackrel{k_f}{\rightleftharpoons}}
+
+### Clockwised arrow
+```LaTeX
+\frac{\prod_\circlearrowright W_{ij}}{\prod_\circlearrowleft W_{ji}}
 ```
+````
 ## General
 ### Color text
 ```LaTeX

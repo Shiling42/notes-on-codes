@@ -3,6 +3,16 @@ title: Mathematica
 ---
 ## Plot Tricks
 
+### Unified style function
+
+```Mathematica
+Styles = {
+   PlotStyle -> {Thickness[0.005], Opacity[0.4]},
+   LabelStyle -> 
+    Directive[FontFamily -> "Helvetica", Black, FontSize -> 15],
+   FrameStyle -> Directive[Black, FontSize -> 15, Thick]
+   };
+```
 
 ### Theme with linestyle
 
@@ -15,7 +25,9 @@ PlotTheme -> {"Scientific", "DashedLines"}
 ```mathematica
 Epilog -> {Line[{{x0,y0}, {x1,y1}}]}
 ```
+
 ### ListPlot: dots -> line
+
 ```Mathematica
 Joined -> True
 ```
@@ -50,7 +62,6 @@ Rasterize[,RasterSize -> 15]
 << MaTeX`
 MaTeX["\sin{x}"]
 ```
-
 ### Multiple figures in a single plot
 ```Mathematica
 Column@{
@@ -58,8 +69,7 @@ Row@{
 }
 }
 ```
-
-### Stream and countour plot 
+### Stream and contour plot 
 ```Mathematica
 With[
   {reactions = { , },
@@ -83,6 +93,17 @@ With[
     ]
    ]
   ],
+```
+
+### Animation
+
+```mathematica
+plots = Table[
+   Plot[
+    ], {t, 0, 30, .2}];
+Export["DecayingWave.gif",plots,"AnimationRepetitions"-> \
+\[Infinity]]
+ListAnimate[plots]
 ```
 
 ## Functional programming
