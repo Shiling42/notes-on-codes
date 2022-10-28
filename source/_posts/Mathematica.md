@@ -69,6 +69,21 @@ Row@{
 }
 }
 ```
+
+### Plot only on a certain region
+Method 1: `ImplicitRegion`
+```Mathematica
+{x0, y0} \[Element] ImplicitRegion[.7 <= x0^2 + y0^2 <= 1, {x0, y0}]
+```
+
+Method 2: `RegionFunction`
+
+```Mathematica
+RegionFunction -> 
+ Function[{x, y}, .64 < x^2 + y^2 < 1]
+```
+
+
 ### Stream and contour plot 
 ```Mathematica
 With[
