@@ -143,8 +143,16 @@ For[With{},..,..]
 ```
 ## Math and Models 
 
-### Basin of attraction
 
+### Uniform unicycle Laplacian operator
+```Mathematica
+cycle[n_] := 
+ Table[If[i == j, -kf - kb, 
+   If[i == Mod[(j + 1), n] || i == j + 1, kb, 
+    If[Mod[i + 1, n] == j || i + 1 == j, kf, 0]]], {i, n}, {j, n}]
+```
+
+### Basin of attraction
 ```Mathematica
 tmax = 10;
 tol = 0.01;
