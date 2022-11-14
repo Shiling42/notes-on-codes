@@ -6,12 +6,23 @@ title: Mathematica
 ### Unified style function
 
 ```Mathematica
+(*for many lines, e.g. stochastic trajectories*)
 Styles = {
    PlotStyle -> {Thickness[0.005], Opacity[0.4]},
    LabelStyle -> 
     Directive[FontFamily -> "Helvetica", Black, FontSize -> 15],
-   FrameStyle -> Directive[Black, FontSize -> 15, Thick]
+   FrameStyle -> Directive[Black, FontSize -> 15, Thickness[.002]]
    };
+
+Evaluate@Styles
+```
+
+```Mathematica
+Styles = {PlotTheme -> {"Scientific", "DashedLines"},
+   PlotTheme -> {"Scientific", "DashedLines"},
+   LabelStyle -> 
+    Directive[FontFamily -> "Helvetica", Black, FontSize -> 15], 
+   FrameStyle -> Directive[Black, FontSize -> 15, Thickness[.002]]};
 ```
 
 ### Theme with linestyle
