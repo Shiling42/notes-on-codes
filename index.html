@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/notes-on-codes/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/notes-on-codes/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/notes-on-codes/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/notes-on-codes/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/notes-on-codes/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"shiling42.github.io","root":"/notes-on-codes/","images":"/notes-on-codes/images","scheme":"Muse","version":"8.3.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
+  </script>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Notes on Codes">
+<meta property="og:url" content="http://shiling42.github.io/notes-on-codes/index.html">
+<meta property="og:site_name" content="Notes on Codes">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Shiling Liang">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://shiling42.github.io/notes-on-codes/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
+<title>Notes on Codes</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/notes-on-codes/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Notes on Codes</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Shiling Liang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/notes-on-codes/archives">
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://shiling42.github.io/notes-on-codes/2022/10/29/LaTeX/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/notes-on-codes/images/avatar.gif">
+      <meta itemprop="name" content="Shiling Liang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Notes on Codes">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/notes-on-codes/2022/10/29/LaTeX/" class="post-title-link" itemprop="url">LaTeX</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-10-29 16:30:03" itemprop="dateCreated datePublished" datetime="2022-10-29T16:30:03+02:00">2022-10-29</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h2><h3 id="reaction-arrows"><a href="#reaction-arrows" class="headerlink" title="reaction arrows"></a>reaction arrows</h3><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\underset</span>&#123;k<span class="built_in">_</span>b&#125;&#123;<span class="keyword">\stackrel</span>&#123;k<span class="built_in">_</span>f&#125;&#123;<span class="keyword">\rightleftharpoons</span>&#125;&#125;</span><br><span class="line"></span><br><span class="line"><span class="params">###</span> Clockwised arrow</span><br><span class="line">```LaTeX</span><br><span class="line"><span class="keyword">\frac</span>&#123;<span class="keyword">\prod</span><span class="built_in">_</span><span class="keyword">\circlearrowright</span> W<span class="built_in">_</span>&#123;ij&#125;&#125;&#123;<span class="keyword">\prod</span><span class="built_in">_</span><span class="keyword">\circlearrowleft</span> W<span class="built_in">_</span>&#123;ji&#125;&#125;</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
+<h2 id="General"><a href="#General" class="headerlink" title="General"></a>General</h2><h3 id="Color-text"><a href="#Color-text" class="headerlink" title="Color text"></a>Color text</h3><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\usepackage</span>&#123;xcolor&#125;</span><br><span class="line"><span class="keyword">\color</span>&#123;red&#125;&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Switch-to-single-column-appendix"><a href="#Switch-to-single-column-appendix" class="headerlink" title="Switch to single column appendix"></a>Switch to single column appendix</h3><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\onecolumn</span></span><br><span class="line"><span class="keyword">\appendix</span></span><br><span class="line"><span class="keyword">\numberwithin</span>&#123;equation&#125;&#123;section&#125;</span><br><span class="line"><span class="keyword">\numberwithin</span>&#123;figure&#125;&#123;section&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Figures"><a href="#Figures" class="headerlink" title="Figures"></a>Figures</h2><h3 id="Basic-figure"><a href="#Basic-figure" class="headerlink" title="Basic figure"></a>Basic figure</h3><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;figure&#125;</span><br><span class="line"><span class="keyword">\centering</span></span><br><span class="line"><span class="keyword">\includegraphics</span>[width=.9<span class="keyword">\columnwidth</span>]&#123;*&#125;</span><br><span class="line"><span class="keyword">\caption</span>&#123;&#125;</span><br><span class="line"><span class="keyword">\label</span>&#123;fig:*&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;figure&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Subfigure"><a href="#Subfigure" class="headerlink" title="Subfigure"></a>Subfigure</h3><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;figure&#125;</span><br><span class="line">    <span class="keyword">\centering</span></span><br><span class="line">    <span class="keyword">\begin</span>&#123;subfigure&#125;[b]&#123;.8<span class="keyword">\columnwidth</span>&#125;</span><br><span class="line">        <span class="keyword">\includegraphics</span>[width=<span class="keyword">\linewidth</span>]&#123;&#125;</span><br><span class="line">        <span class="keyword">\caption</span>&#123;&#125;</span><br><span class="line">        <span class="keyword">\label</span>&#123;fig:a&#125;</span><br><span class="line">    <span class="keyword">\end</span>&#123;subfigure&#125;</span><br><span class="line">    <span class="keyword">\begin</span>&#123;subfigure&#125;[b]&#123;.49<span class="keyword">\columnwidth</span>&#125;</span><br><span class="line">        <span class="keyword">\includegraphics</span>[width=1<span class="keyword">\linewidth</span>]&#123;&#125;</span><br><span class="line">        <span class="keyword">\caption</span>&#123;&#125;</span><br><span class="line">    <span class="keyword">\end</span>&#123;subfigure&#125;</span><br><span class="line">    <span class="keyword">\caption</span>&#123;&#125; </span><br><span class="line">    <span class="keyword">\label</span>&#123;fig:1&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;figure&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://shiling42.github.io/notes-on-codes/2022/10/29/Mathematica/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/notes-on-codes/images/avatar.gif">
+      <meta itemprop="name" content="Shiling Liang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Notes on Codes">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/notes-on-codes/2022/10/29/Mathematica/" class="post-title-link" itemprop="url">Mathematica</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-10-29 16:30:03" itemprop="dateCreated datePublished" datetime="2022-10-29T16:30:03+02:00">2022-10-29</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-11-14 11:58:00" itemprop="dateModified" datetime="2022-11-14T11:58:00+01:00">2022-11-14</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="Plot-Tricks"><a href="#Plot-Tricks" class="headerlink" title="Plot Tricks"></a>Plot Tricks</h2><h3 id="Unified-style-function"><a href="#Unified-style-function" class="headerlink" title="Unified style function"></a>Unified style function</h3><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">(*for many lines, e.g. stochastic trajectories*)</span></span><br><span class="line"><span class="variable">Styles</span> <span class="operator">=</span> <span class="punctuation">&#123;</span></span><br><span class="line">   <span class="built_in">PlotStyle</span> <span class="operator">-&gt;</span> <span class="punctuation">&#123;</span><span class="built_in">Thickness</span><span class="punctuation">[</span><span class="number">0.005</span><span class="punctuation">]</span><span class="operator">,</span> <span class="built_in">Opacity</span><span class="punctuation">[</span><span class="number">0.4</span><span class="punctuation">]</span><span class="punctuation">&#125;</span><span class="operator">,</span></span><br><span class="line">   <span class="built_in">LabelStyle</span> <span class="operator">-&gt;</span> </span><br><span class="line">    <span class="built_in">Directive</span><span class="punctuation">[</span><span class="built_in">FontFamily</span> <span class="operator">-&gt;</span> <span class="string">&quot;Helvetica&quot;</span><span class="operator">,</span> <span class="built_in">Black</span><span class="operator">,</span> <span class="built_in">FontSize</span> <span class="operator">-&gt;</span> <span class="number">15</span><span class="punctuation">]</span><span class="operator">,</span></span><br><span class="line">   <span class="built_in">FrameStyle</span> <span class="operator">-&gt;</span> <span class="built_in">Directive</span><span class="punctuation">[</span><span class="built_in">Black</span><span class="operator">,</span> <span class="built_in">FontSize</span> <span class="operator">-&gt;</span> <span class="number">15</span><span class="operator">,</span> <span class="built_in">Thickness</span><span class="punctuation">[</span><span class="number">.002</span><span class="punctuation">]</span><span class="punctuation">]</span></span><br><span class="line">   <span class="punctuation">&#125;</span><span class="operator">;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Evaluate</span><span class="operator">@</span><span class="variable">Styles</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">Styles</span> <span class="operator">=</span> <span class="punctuation">&#123;</span><span class="built_in">PlotTheme</span> <span class="operator">-&gt;</span> <span class="punctuation">&#123;</span><span class="string">&quot;Scientific&quot;</span><span class="operator">,</span> <span class="string">&quot;DashedLines&quot;</span><span class="punctuation">&#125;</span><span class="operator">,</span></span><br><span class="line">   <span class="built_in">PlotTheme</span> <span class="operator">-&gt;</span> <span class="punctuation">&#123;</span><span class="string">&quot;Scientific&quot;</span><span class="operator">,</span> <span class="string">&quot;DashedLines&quot;</span><span class="punctuation">&#125;</span><span class="operator">,</span></span><br><span class="line">   <span class="built_in">LabelStyle</span> <span class="operator">-&gt;</span> </span><br><span class="line">    <span class="built_in">Directive</span><span class="punctuation">[</span><span class="built_in">FontFamily</span> <span class="operator">-&gt;</span> <span class="string">&quot;Helvetica&quot;</span><span class="operator">,</span> <span class="built_in">Black</span><span class="operator">,</span> <span class="built_in">FontSize</span> <span class="operator">-&gt;</span> <span class="number">15</span><span class="punctuation">]</span><span class="operator">,</span> </span><br><span class="line">   <span class="built_in">FrameStyle</span> <span class="operator">-&gt;</span> <span class="built_in">Directive</span><span class="punctuation">[</span><span class="built_in">Black</span><span class="operator">,</span> <span class="built_in">FontSize</span> <span class="operator">-&gt;</span> <span class="number">15</span><span class="operator">,</span> <span class="built_in">Thickness</span><span class="punctuation">[</span><span class="number">.002</span><span class="punctuation">]</span><span class="punctuation">]</span><span class="punctuation">&#125;</span><span class="operator">;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Theme-with-linestyle"><a href="#Theme-with-linestyle" class="headerlink" title="Theme with linestyle"></a>Theme with linestyle</h3><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">PlotTheme</span> <span class="operator">-&gt;</span> <span class="punctuation">&#123;</span><span class="string">&quot;Scientific&quot;</span><span class="operator">,</span> <span class="string">&quot;DashedLines&quot;</span><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Vertical-lines-in-a-plot"><a href="#Vertical-lines-in-a-plot" class="headerlink" title="Vertical lines in a plot"></a>Vertical lines in a plot</h3><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Epilog</span> <span class="operator">-&gt;</span> <span class="punctuation">&#123;</span><span class="built_in">Line</span><span class="punctuation">[</span><span class="punctuation">&#123;</span><span class="punctuation">&#123;</span><span class="variable">x0</span><span class="operator">,</span><span class="variable">y0</span><span class="punctuation">&#125;</span><span class="operator">,</span> <span class="punctuation">&#123;</span><span class="variable">x1</span><span class="operator">,</span><span class="variable">y1</span><span class="punctuation">&#125;</span><span class="punctuation">&#125;</span><span class="punctuation">]</span><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="ListPlot-dots-gt-line"><a href="#ListPlot-dots-gt-line" class="headerlink" title="ListPlot: dots -&gt; line"></a>ListPlot: dots -&gt; line</h3><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Joined</span> <span class="operator">-&gt;</span> <span class="built_in">True</span></span><br></pre></td></tr></table></figure>
+<h3 id="Legend-size"><a href="#Legend-size" class="headerlink" title="Legend size"></a>Legend size</h3><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">LabelStyle</span> <span class="operator">-&gt;</span> </span><br><span class="line"> <span class="built_in">Directive</span><span class="punctuation">[</span><span class="built_in">FontFamily</span> <span class="operator">-&gt;</span> <span class="string">&quot;Helvetica&quot;</span><span class="operator">,</span> <span class="built_in">Black</span><span class="operator">,</span> <span class="built_in">FontSize</span> <span class="operator">-&gt;</span> <span class="number">15</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Colorbar-Legend"><a href="#Colorbar-Legend" class="headerlink" title="Colorbar Legend"></a>Colorbar Legend</h3><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">PlotLegends</span> <span class="operator">-&gt;</span> <span class="built_in">BarLegend</span><span class="punctuation">[</span><span class="built_in">Automatic</span><span class="operator">,</span> <span class="built_in">LegendLabel</span> <span class="operator">-&gt;</span> <span class="string">&quot;z&quot;</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Frame-ticks-and-labels-size"><a href="#Frame-ticks-and-labels-size" class="headerlink" title="Frame ticks and labels size"></a>Frame ticks and labels size</h3><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">FrameStyle</span> <span class="operator">-&gt;</span> <span class="built_in">Directive</span><span class="punctuation">[</span><span class="built_in">Black</span><span class="operator">,</span> <span class="built_in">FontSize</span> <span class="operator">-&gt;</span> <span class="number">15</span><span class="operator">,</span> <span class="built_in">Thick</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Unify-and-resize-fig"><a href="#Unify-and-resize-fig" class="headerlink" title="Unify and resize fig"></a>Unify and resize fig</h3><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Rasterize</span><span class="punctuation">[</span><span class="operator">,</span><span class="built_in">RasterSize</span> <span class="operator">-&gt;</span> <span class="number">15</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Latex-input"><a href="#Latex-input" class="headerlink" title="Latex input"></a>Latex input</h3><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator">&lt;&lt;</span> <span class="variable">MaTeX</span><span class="operator">`</span></span><br><span class="line"><span class="variable">MaTeX</span><span class="punctuation">[</span><span class="string">&quot;\sin&#123;x&#125;&quot;</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+<h3 id="Multiple-figures-in-a-single-plot"><a href="#Multiple-figures-in-a-single-plot" class="headerlink" title="Multiple figures in a single plot"></a>Multiple figures in a single plot</h3><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Column</span><span class="operator">@</span><span class="punctuation">&#123;</span></span><br><span class="line"><span class="built_in">Row</span><span class="operator">@</span><span class="punctuation">&#123;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Plot-only-on-a-certain-region"><a href="#Plot-only-on-a-certain-region" class="headerlink" title="Plot only on a certain region"></a>Plot only on a certain region</h3><p>Method 1: <code>ImplicitRegion</code></p>
+<figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span><span class="variable">x0</span><span class="operator">,</span> <span class="variable">y0</span><span class="punctuation">&#125;</span> <span class="variable">\[Element]</span> <span class="built_in">ImplicitRegion</span><span class="punctuation">[</span><span class="number">.7</span> <span class="operator">&lt;=</span> <span class="variable">x0</span><span class="operator">^</span><span class="number">2</span> <span class="operator">+</span> <span class="variable">y0</span><span class="operator">^</span><span class="number">2</span> <span class="operator">&lt;=</span> <span class="number">1</span><span class="operator">,</span> <span class="punctuation">&#123;</span><span class="variable">x0</span><span class="operator">,</span> <span class="variable">y0</span><span class="punctuation">&#125;</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+
+<p>Method 2: <code>RegionFunction</code></p>
+<figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">RegionFunction</span> <span class="operator">-&gt;</span> </span><br><span class="line"> <span class="built_in">Function</span><span class="punctuation">[</span><span class="punctuation">&#123;</span><span class="variable">x</span><span class="operator">,</span> <span class="variable">y</span><span class="punctuation">&#125;</span><span class="operator">,</span> <span class="number">.64</span> <span class="operator">&lt;</span> <span class="variable">x</span><span class="operator">^</span><span class="number">2</span> <span class="operator">+</span> <span class="variable">y</span><span class="operator">^</span><span class="number">2</span> <span class="operator">&lt;</span> <span class="number">1</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Stream-and-contour-plot"><a href="#Stream-and-contour-plot" class="headerlink" title="Stream and contour plot"></a>Stream and contour plot</h3><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">With</span><span class="punctuation">[</span></span><br><span class="line">  <span class="punctuation">&#123;</span><span class="variable">reactions</span> <span class="operator">=</span> <span class="punctuation">&#123;</span> <span class="operator">,</span> <span class="punctuation">&#125;</span><span class="operator">,</span></span><br><span class="line">  <span class="built_in">Show</span><span class="punctuation">[</span></span><br><span class="line">   <span class="built_in">StreamPlot</span><span class="punctuation">[</span></span><br><span class="line">    <span class="built_in">Evaluate</span><span class="punctuation">[</span></span><br><span class="line">     <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="variable">reactions</span><span class="punctuation">[</span><span class="punctuation">[</span><span class="number">1</span><span class="punctuation">]</span><span class="punctuation">]</span><span class="operator">,</span> <span class="variable">reactions</span><span class="punctuation">[</span><span class="punctuation">[</span><span class="number">2</span><span class="punctuation">]</span><span class="punctuation">]</span></span><br><span class="line">      <span class="punctuation">&#125;</span></span><br><span class="line">     <span class="punctuation">]</span><span class="operator">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span><span class="variable">r</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">1</span><span class="punctuation">&#125;</span><span class="operator">,</span> <span class="punctuation">&#123;</span><span class="variable">s</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">1</span><span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">]</span><span class="operator">,</span></span><br><span class="line">   <span class="built_in">ContourPlot</span><span class="punctuation">[</span></span><br><span class="line">    <span class="built_in">Evaluate</span><span class="punctuation">[</span></span><br><span class="line">     <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="number">0</span> <span class="operator">==</span> <span class="variable">reactions</span><span class="punctuation">[</span><span class="punctuation">[</span><span class="number">1</span><span class="punctuation">]</span><span class="punctuation">]</span><span class="operator">,</span></span><br><span class="line">      <span class="number">0</span> <span class="operator">==</span> <span class="variable">reactions</span><span class="punctuation">[</span><span class="punctuation">[</span><span class="number">2</span><span class="punctuation">]</span><span class="punctuation">]</span></span><br><span class="line">      <span class="punctuation">&#125;</span></span><br><span class="line">     <span class="punctuation">]</span><span class="operator">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span><span class="variable">r</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">1</span><span class="punctuation">&#125;</span><span class="operator">,</span> <span class="punctuation">&#123;</span><span class="variable">s</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">1</span><span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">]</span></span><br><span class="line">   <span class="punctuation">]</span></span><br><span class="line">  <span class="punctuation">]</span><span class="operator">,</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Animation"><a href="#Animation" class="headerlink" title="Animation"></a>Animation</h3><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">plots</span> <span class="operator">=</span> <span class="built_in">Table</span><span class="punctuation">[</span></span><br><span class="line">   <span class="built_in">Plot</span><span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">]</span><span class="operator">,</span> <span class="punctuation">&#123;</span><span class="variable">t</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">30</span><span class="operator">,</span> <span class="number">.2</span><span class="punctuation">&#125;</span><span class="punctuation">]</span><span class="operator">;</span></span><br><span class="line"><span class="built_in">Export</span><span class="punctuation">[</span><span class="string">&quot;DecayingWave.gif&quot;</span><span class="operator">,</span><span class="variable">plots</span><span class="operator">,</span><span class="string">&quot;AnimationRepetitions&quot;</span><span class="operator">-&gt;</span> \</span><br><span class="line"><span class="variable">\[Infinity]</span><span class="punctuation">]</span></span><br><span class="line"><span class="built_in">ListAnimate</span><span class="punctuation">[</span><span class="variable">plots</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Functional-programming"><a href="#Functional-programming" class="headerlink" title="Functional programming"></a>Functional programming</h2><h3 id="Basic-use-of-function"><a href="#Basic-use-of-function" class="headerlink" title="Basic use of function"></a>Basic use of function</h3><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">f</span><span class="punctuation">[</span><span class="type">x_</span><span class="operator">,</span><span class="type">y_</span><span class="punctuation">]</span> <span class="operator">:=</span> </span><br></pre></td></tr></table></figure>
+
+<h3 id="Map-and-apply"><a href="#Map-and-apply" class="headerlink" title="Map and apply"></a>Map and apply</h3><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">f</span><span class="punctuation">[</span><span class="type">x_</span><span class="operator">,</span><span class="type">y_</span><span class="punctuation">]</span> <span class="operator">:=</span></span><br><span class="line"><span class="variable">f</span><span class="operator">@@</span><span class="punctuation">&#123;</span><span class="variable">x</span><span class="operator">,</span><span class="variable">y</span><span class="punctuation">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="variable">f</span><span class="punctuation">[</span><span class="type">x_</span><span class="punctuation">]</span> <span class="operator">:=</span></span><br><span class="line"><span class="variable">f</span><span class="operator">/@</span><span class="variable">x</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="For-loop"><a href="#For-loop" class="headerlink" title="For loop"></a>For loop</h3><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">For</span><span class="punctuation">[</span><span class="built_in">With</span><span class="punctuation">&#123;</span><span class="punctuation">&#125;</span><span class="operator">,..,..</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+<h2 id="Math-and-Models"><a href="#Math-and-Models" class="headerlink" title="Math and Models"></a>Math and Models</h2><h3 id="Uniform-unicycle-Laplacian-operator"><a href="#Uniform-unicycle-Laplacian-operator" class="headerlink" title="Uniform unicycle Laplacian operator"></a>Uniform unicycle Laplacian operator</h3><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">cycle</span><span class="punctuation">[</span><span class="type">n_</span><span class="punctuation">]</span> <span class="operator">:=</span> </span><br><span class="line"> <span class="built_in">Table</span><span class="punctuation">[</span><span class="built_in">If</span><span class="punctuation">[</span><span class="variable">i</span> <span class="operator">==</span> <span class="variable">j</span><span class="operator">,</span> <span class="operator">-</span><span class="variable">kf</span> <span class="operator">-</span> <span class="variable">kb</span><span class="operator">,</span> </span><br><span class="line">   <span class="built_in">If</span><span class="punctuation">[</span><span class="variable">i</span> <span class="operator">==</span> <span class="built_in">Mod</span><span class="punctuation">[</span><span class="punctuation">(</span><span class="variable">j</span> <span class="operator">+</span> <span class="number">1</span><span class="punctuation">)</span><span class="operator">,</span> <span class="variable">n</span><span class="punctuation">]</span> <span class="operator">||</span> <span class="variable">i</span> <span class="operator">==</span> <span class="variable">j</span> <span class="operator">+</span> <span class="number">1</span><span class="operator">,</span> <span class="variable">kb</span><span class="operator">,</span> </span><br><span class="line">    <span class="built_in">If</span><span class="punctuation">[</span><span class="built_in">Mod</span><span class="punctuation">[</span><span class="variable">i</span> <span class="operator">+</span> <span class="number">1</span><span class="operator">,</span> <span class="variable">n</span><span class="punctuation">]</span> <span class="operator">==</span> <span class="variable">j</span> <span class="operator">||</span> <span class="variable">i</span> <span class="operator">+</span> <span class="number">1</span> <span class="operator">==</span> <span class="variable">j</span><span class="operator">,</span> <span class="variable">kf</span><span class="operator">,</span> <span class="number">0</span><span class="punctuation">]</span><span class="punctuation">]</span><span class="punctuation">]</span><span class="operator">,</span> <span class="punctuation">&#123;</span><span class="variable">i</span><span class="operator">,</span> <span class="variable">n</span><span class="punctuation">&#125;</span><span class="operator">,</span> <span class="punctuation">&#123;</span><span class="variable">j</span><span class="operator">,</span> <span class="variable">n</span><span class="punctuation">&#125;</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Basin-of-attraction"><a href="#Basin-of-attraction" class="headerlink" title="Basin of attraction"></a>Basin of attraction</h3><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">tmax</span> <span class="operator">=</span> <span class="number">10</span><span class="operator">;</span></span><br><span class="line"><span class="variable">tol</span> <span class="operator">=</span> <span class="number">0.01</span><span class="operator">;</span></span><br><span class="line"><span class="comment">(*Solution to ODE that maps t to &#123;x[t],y[t]&#125;*)</span></span><br><span class="line"><span class="variable">sol</span><span class="punctuation">[</span><span class="type">x0_</span><span class="operator">?</span><span class="built_in">NumericQ</span><span class="operator">,</span> <span class="type">y0_</span><span class="operator">?</span><span class="built_in">NumericQ</span><span class="operator">,</span> <span class="type">Req_</span><span class="operator">,</span> <span class="variable">\[Eta]</span><span class="type">_</span><span class="punctuation">]</span> <span class="operator">:=</span> </span><br><span class="line">  <span class="built_in">First</span><span class="operator">@</span><span class="built_in">NDSolve</span><span class="punctuation">[</span></span><br><span class="line">     <span class="built_in">Evaluate</span><span class="punctuation">[</span><span class="punctuation">&#123;</span><span class="variable">x</span><span class="punctuation">[</span><span class="number">0</span><span class="punctuation">]</span> <span class="operator">==</span> <span class="variable">x0</span><span class="operator">,</span> <span class="variable">y</span><span class="punctuation">[</span><span class="number">0</span><span class="punctuation">]</span> <span class="operator">==</span> <span class="variable">y0</span><span class="operator">,</span> </span><br><span class="line">       <span class="variable">x</span><span class="operator">&#x27;</span><span class="punctuation">[</span><span class="variable">t</span><span class="punctuation">]</span> <span class="operator">==</span> <span class="variable">\[Eta]</span> <span class="variable">x</span><span class="punctuation">[</span><span class="variable">t</span><span class="punctuation">]</span><span class="operator">^</span><span class="number">2</span> <span class="punctuation">(</span><span class="punctuation">(</span><span class="number">1</span> <span class="operator">-</span> <span class="variable">y</span><span class="punctuation">[</span><span class="variable">t</span><span class="punctuation">]</span> <span class="operator">-</span> <span class="variable">x</span><span class="punctuation">[</span><span class="variable">t</span><span class="punctuation">]</span><span class="punctuation">)</span> <span class="operator">-</span> <span class="variable">Req</span> <span class="variable">x</span><span class="punctuation">[</span><span class="variable">t</span><span class="punctuation">]</span><span class="punctuation">)</span> <span class="operator">-</span> <span class="variable">x</span><span class="punctuation">[</span><span class="variable">t</span><span class="punctuation">]</span><span class="operator">,</span> </span><br><span class="line">       <span class="variable">y</span><span class="operator">&#x27;</span><span class="punctuation">[</span><span class="variable">t</span><span class="punctuation">]</span> <span class="operator">==</span> <span class="variable">\[Eta]</span> <span class="variable">y</span><span class="punctuation">[</span><span class="variable">t</span><span class="punctuation">]</span><span class="operator">^</span><span class="number">2</span> <span class="punctuation">(</span><span class="punctuation">(</span><span class="number">1</span> <span class="operator">-</span> <span class="variable">y</span><span class="punctuation">[</span><span class="variable">t</span><span class="punctuation">]</span> <span class="operator">-</span> <span class="variable">x</span><span class="punctuation">[</span><span class="variable">t</span><span class="punctuation">]</span><span class="punctuation">)</span> <span class="operator">-</span> <span class="variable">Req</span> <span class="variable">y</span><span class="punctuation">[</span><span class="variable">t</span><span class="punctuation">]</span><span class="punctuation">)</span> <span class="operator">-</span> </span><br><span class="line">         <span class="variable">y</span><span class="punctuation">[</span><span class="variable">t</span><span class="punctuation">]</span><span class="punctuation">&#125;</span><span class="punctuation">]</span><span class="operator">,</span> <span class="punctuation">&#123;</span><span class="variable">x</span><span class="operator">,</span> <span class="variable">y</span><span class="punctuation">&#125;</span><span class="operator">,</span> <span class="punctuation">&#123;</span><span class="variable">t</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="variable">tmax</span><span class="punctuation">&#125;</span><span class="punctuation">]</span> <span class="operator">/.</span> </span><br><span class="line">   <span class="built_in">HoldPattern</span><span class="punctuation">[</span><span class="punctuation">&#123;</span><span class="variable">x</span> <span class="operator">-&gt;</span> <span class="type">xi_</span><span class="operator">,</span> <span class="variable">y</span> <span class="operator">-&gt;</span> <span class="type">yi_</span><span class="punctuation">&#125;</span><span class="punctuation">]</span> <span class="operator">:&gt;</span> <span class="built_in">Function</span><span class="punctuation">[</span><span class="punctuation">&#123;</span><span class="variable">t</span><span class="punctuation">&#125;</span><span class="operator">,</span> <span class="punctuation">&#123;</span><span class="variable">xi</span><span class="punctuation">[</span><span class="variable">t</span><span class="punctuation">]</span><span class="operator">,</span> <span class="variable">yi</span><span class="punctuation">[</span><span class="variable">t</span><span class="punctuation">]</span><span class="punctuation">&#125;</span><span class="punctuation">]</span><span class="operator">;</span></span><br><span class="line"><span class="variable">BasinAssign</span> <span class="operator">:=</span> <span class="built_in">Function</span><span class="punctuation">[</span><span class="punctuation">&#123;</span><span class="variable">f</span><span class="punctuation">&#125;</span><span class="operator">,</span> <span class="built_in">Norm</span><span class="punctuation">[</span><span class="variable">f</span><span class="punctuation">[</span><span class="variable">tmax</span><span class="punctuation">]</span><span class="punctuation">]</span><span class="punctuation">]</span><span class="operator">;</span></span><br><span class="line"><span class="built_in">Manipulate</span><span class="punctuation">[</span></span><br><span class="line"> <span class="built_in">Show</span><span class="punctuation">[</span><span class="built_in">DensityPlot</span><span class="punctuation">[</span></span><br><span class="line">   <span class="variable">BasinAssign</span><span class="punctuation">[</span><span class="variable">sol</span><span class="punctuation">[</span><span class="variable">x0</span><span class="operator">,</span> <span class="variable">y0</span><span class="operator">,</span> <span class="number">0.5</span><span class="operator">,</span> <span class="number">10</span><span class="operator">^</span><span class="variable">log</span><span class="variable">\[Eta]</span><span class="punctuation">]</span><span class="punctuation">]</span><span class="operator">,</span> <span class="punctuation">&#123;</span><span class="variable">x0</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">1</span><span class="punctuation">&#125;</span><span class="operator">,</span> <span class="punctuation">&#123;</span><span class="variable">y0</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> </span><br><span class="line">    <span class="number">1</span><span class="punctuation">&#125;</span><span class="operator">,</span> <span class="built_in">PlotPoints</span> <span class="operator">-&gt;</span> <span class="number">20</span><span class="operator">,</span> <span class="built_in">PlotLegends</span> <span class="operator">-&gt;</span> <span class="built_in">Automatic</span><span class="operator">,</span> </span><br><span class="line">   <span class="built_in">PlotRange</span> <span class="operator">-&gt;</span> <span class="built_in">Full</span><span class="punctuation">]</span><span class="operator">,</span> </span><br><span class="line">  <span class="built_in">StreamPlot</span><span class="punctuation">[</span><span class="punctuation">&#123;</span><span class="variable">\[Eta]</span> <span class="variable">l</span><span class="operator">^</span><span class="number">2</span> <span class="punctuation">(</span><span class="punctuation">(</span><span class="number">1</span> <span class="operator">-</span> <span class="variable">d</span> <span class="operator">-</span> <span class="variable">l</span><span class="punctuation">)</span> <span class="operator">-</span> <span class="number">0.5</span> <span class="variable">l</span><span class="punctuation">)</span> <span class="operator">-</span> </span><br><span class="line">      <span class="variable">l</span><span class="operator">,</span> <span class="variable">\[Eta]</span> <span class="variable">d</span><span class="operator">^</span><span class="number">2</span> <span class="punctuation">(</span><span class="punctuation">(</span><span class="number">1</span> <span class="operator">-</span> <span class="variable">d</span> <span class="operator">-</span> <span class="variable">l</span><span class="punctuation">)</span> <span class="operator">-</span> <span class="number">0.5</span> <span class="variable">d</span><span class="punctuation">)</span> <span class="operator">-</span> <span class="variable">d</span><span class="punctuation">&#125;</span> <span class="operator">/.</span> <span class="variable">\[Eta]</span> <span class="operator">-&gt;</span> <span class="number">10</span><span class="operator">^</span></span><br><span class="line">     <span class="variable">log</span><span class="variable">\[Eta]</span><span class="operator">,</span> <span class="punctuation">&#123;</span><span class="variable">l</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">1</span><span class="punctuation">&#125;</span><span class="operator">,</span> <span class="punctuation">&#123;</span><span class="variable">d</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">1</span><span class="punctuation">&#125;</span><span class="operator">,</span> <span class="built_in">FrameLabel</span> <span class="operator">-&gt;</span> <span class="punctuation">&#123;</span><span class="string">&quot;[B]&quot;</span><span class="operator">,</span> <span class="string">&quot;[C]&quot;</span><span class="punctuation">&#125;</span><span class="punctuation">]</span><span class="operator">,</span> </span><br><span class="line">  <span class="built_in">ContourPlot</span><span class="punctuation">[</span></span><br><span class="line">   <span class="built_in">Evaluate</span><span class="punctuation">[</span><span class="punctuation">&#123;</span><span class="number">0</span> <span class="operator">==</span> <span class="variable">\[Eta]</span> <span class="variable">l</span><span class="operator">^</span><span class="number">2</span> <span class="punctuation">(</span><span class="punctuation">(</span><span class="number">1</span> <span class="operator">-</span> <span class="variable">d</span> <span class="operator">-</span> <span class="variable">l</span><span class="punctuation">)</span> <span class="operator">-</span> <span class="number">0.5</span> <span class="variable">l</span><span class="punctuation">)</span> <span class="operator">-</span> <span class="variable">l</span><span class="operator">,</span> </span><br><span class="line">      <span class="number">0</span> <span class="operator">==</span> <span class="variable">\[Eta]</span> <span class="variable">d</span><span class="operator">^</span><span class="number">2</span> <span class="punctuation">(</span><span class="punctuation">(</span><span class="number">1</span> <span class="operator">-</span> <span class="variable">d</span> <span class="operator">-</span> <span class="variable">l</span><span class="punctuation">)</span> <span class="operator">-</span> <span class="number">0.5</span> <span class="variable">d</span><span class="punctuation">)</span> <span class="operator">-</span> <span class="variable">d</span><span class="punctuation">&#125;</span> <span class="operator">/.</span> <span class="variable">\[Eta]</span> <span class="operator">-&gt;</span> <span class="number">10</span><span class="operator">^</span></span><br><span class="line">      <span class="variable">log</span><span class="variable">\[Eta]</span><span class="punctuation">]</span><span class="operator">,</span> <span class="punctuation">&#123;</span><span class="variable">l</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">1</span><span class="punctuation">&#125;</span><span class="operator">,</span> <span class="punctuation">&#123;</span><span class="variable">d</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">1</span><span class="punctuation">&#125;</span><span class="operator">,</span> <span class="built_in">PlotPoints</span> <span class="operator">-&gt;</span> <span class="number">100</span><span class="operator">,</span> </span><br><span class="line">   <span class="built_in">MaxRecursion</span> <span class="operator">-&gt;</span> <span class="number">2</span><span class="punctuation">]</span><span class="punctuation">]</span><span class="operator">,</span> <span class="punctuation">&#123;</span><span class="punctuation">&#123;</span><span class="variable">log</span><span class="variable">\[Eta]</span><span class="operator">,</span> <span class="number">1</span><span class="punctuation">&#125;</span><span class="operator">,</span> <span class="number">.7</span><span class="operator">,</span> <span class="number">2</span><span class="operator">,</span> </span><br><span class="line">  <span class="built_in">Appearance</span> <span class="operator">-&gt;</span>  <span class="string">&quot;Labeled&quot;</span><span class="punctuation">&#125;</span><span class="operator">,</span> <span class="punctuation">&#123;</span><span class="punctuation">&#123;</span><span class="variable">Req</span><span class="operator">,</span> <span class="number">0.5</span><span class="punctuation">&#125;</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">1</span><span class="operator">,</span> </span><br><span class="line">  <span class="built_in">Appearance</span> <span class="operator">-&gt;</span>  <span class="string">&quot;Labeled&quot;</span><span class="punctuation">&#125;</span><span class="punctuation">]</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="General-tricks"><a href="#General-tricks" class="headerlink" title="General tricks"></a>General tricks</h2><h3 id="Rule-and-RuleDelayed"><a href="#Rule-and-RuleDelayed" class="headerlink" title="Rule and RuleDelayed"></a>Rule and RuleDelayed</h3><p>The “rule” replacement replace the variables after evaluated, however, the “ruledelayed” replace the variables and then the evaluation starts.</p>
+<figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">In</span><span class="punctuation">[</span><span class="number">3</span><span class="punctuation">]</span><span class="operator">:=</span> <span class="punctuation">&#123;</span><span class="variable">x</span><span class="operator">,</span> <span class="variable">x</span><span class="operator">,</span> <span class="variable">x</span><span class="punctuation">&#125;</span> <span class="operator">/.</span> <span class="variable">x</span> <span class="operator">:&gt;</span> <span class="built_in">RandomReal</span><span class="punctuation">[</span><span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#123;</span><span class="variable">x</span><span class="operator">,</span> <span class="variable">x</span><span class="operator">,</span> <span class="variable">x</span><span class="punctuation">&#125;</span> <span class="operator">/.</span> <span class="variable">x</span> <span class="operator">-&gt;</span> <span class="built_in">RandomReal</span><span class="punctuation">[</span><span class="punctuation">]</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Out</span><span class="punctuation">[</span><span class="number">3</span><span class="punctuation">]</span><span class="operator">=</span> <span class="punctuation">&#123;</span><span class="number">0.424537</span><span class="operator">,</span> <span class="number">0.500212</span><span class="operator">,</span> <span class="number">0.799267</span><span class="punctuation">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Out</span><span class="punctuation">[</span><span class="number">4</span><span class="punctuation">]</span><span class="operator">=</span> <span class="punctuation">&#123;</span><span class="number">0.541989</span><span class="operator">,</span> <span class="number">0.541989</span><span class="operator">,</span> <span class="number">0.541989</span><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Joint-string-and-variables"><a href="#Joint-string-and-variables" class="headerlink" title="Joint string and variables"></a>Joint string and variables</h3><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">dTlist</span> <span class="operator">=</span> <span class="built_in">Table</span><span class="punctuation">[</span><span class="built_in">StringForm</span><span class="punctuation">[</span><span class="string">&quot;\[CapitalDelta]T=``&quot;</span><span class="operator">,</span> <span class="variable">i</span> <span class="punctuation">]</span><span class="operator">,</span> <span class="punctuation">&#123;</span><span class="variable">i</span><span class="operator">,</span> <span class="number">1</span><span class="operator">,</span> <span class="number">3</span><span class="punctuation">&#125;</span><span class="punctuation">]</span><span class="operator">;</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://shiling42.github.io/notes-on-codes/2022/09/13/Python/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/notes-on-codes/images/avatar.gif">
+      <meta itemprop="name" content="Shiling Liang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Notes on Codes">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/notes-on-codes/2022/09/13/Python/" class="post-title-link" itemprop="url">Python</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-09-13 15:51:19" itemprop="dateCreated datePublished" datetime="2022-09-13T15:51:19+02:00">2022-09-13</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="Basics"><a href="#Basics" class="headerlink" title="Basics"></a>Basics</h2><p>convert ‘1’ to ‘001’ str</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">f&#x27;<span class="subst">&#123;i:03&#125;</span>&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Lambda-function"><a href="#Lambda-function" class="headerlink" title="Lambda function"></a>Lambda function</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">max_vb = <span class="keyword">lambda</span> x,y: (x/y-<span class="number">1</span>)/(x/y+<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="Plot"><a href="#Plot" class="headerlink" title="Plot"></a>Plot</h2><h3 id="Plot-in-function"><a href="#Plot-in-function" class="headerlink" title="Plot in function"></a>Plot in function</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## define function to manipulate fig and ax</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">plotfunc</span>()</span><br><span class="line">    dis = np.array(pdis)</span><br><span class="line">    fig, (ax1, ax2,ax3) = plt.subplots(<span class="number">1</span>, <span class="number">3</span>,figsize=(<span class="number">18</span>,<span class="number">6</span>))</span><br><span class="line">    u0 = ax1.imshow(dis[<span class="number">0</span>],cmap=cmap,vmin=<span class="number">0</span>, vmax=vmax0)</span><br><span class="line">    <span class="comment">#ax1.axis(&#x27;off&#x27;)</span></span><br><span class="line">    ax1.set_xticks([])</span><br><span class="line">    ax1.tick_params(labelsize=<span class="number">15</span>) </span><br><span class="line">    <span class="comment">#ax1.set_yticks([])</span></span><br><span class="line">    ax1.set_title())</span><br><span class="line">    clb = plt.colorbar()</span><br><span class="line">    clb.ax.tick_params(labelsize=<span class="number">15</span>) </span><br><span class="line">    u1 = ax2.imshow()</span><br><span class="line">    ax2.set_title()</span><br><span class="line">    ax2.axis(<span class="string">&#x27;off&#x27;</span>)</span><br><span class="line">    clb = plt.colorbar(u1,ax=ax2, fraction=<span class="number">0.046</span>, pad=<span class="number">0.04</span>,orientation=<span class="string">&quot;horizontal&quot;</span>)</span><br><span class="line">    clb.ax.tick_params(labelsize=<span class="number">15</span>) </span><br><span class="line">    utot = ax3.imshow(utot,cmap=cmap,vmin=<span class="number">0</span>, vmax=vmax3)</span><br><span class="line">    ax3.axis(<span class="string">&#x27;off&#x27;</span>)</span><br><span class="line">    ax3.set_title()</span><br><span class="line">    clb = plt.colorbar(utot,ax=ax3,fraction=<span class="number">0.046</span>, pad=<span class="number">0.04</span>,orientation=<span class="string">&quot;horizontal&quot;</span>)</span><br><span class="line">    clb.ax.tick_params(labelsize=<span class="number">15</span>) </span><br><span class="line">    <span class="keyword">return</span> fig</span><br></pre></td></tr></table></figure>
+
+<h3 id="Basic-figure"><a href="#Basic-figure" class="headerlink" title="Basic figure"></a>Basic figure</h3><h3 id="Subplots"><a href="#Subplots" class="headerlink" title="Subplots"></a>Subplots</h3><h3 id="Histogram"><a href="#Histogram" class="headerlink" title="Histogram"></a>Histogram</h3><h3 id="Styles-dashed-line-style-cycle"><a href="#Styles-dashed-line-style-cycle" class="headerlink" title="Styles: dashed line style cycle"></a>Styles: dashed line style cycle</h3><h2 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h2>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://shiling42.github.io/notes-on-codes/2022/09/13/bash/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/notes-on-codes/images/avatar.gif">
+      <meta itemprop="name" content="Shiling Liang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Notes on Codes">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/notes-on-codes/2022/09/13/bash/" class="post-title-link" itemprop="url">bash</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-09-13 15:51:19" itemprop="dateCreated datePublished" datetime="2022-09-13T15:51:19+02:00">2022-09-13</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="Remote"><a href="#Remote" class="headerlink" title="Remote"></a>Remote</h2><h3 id="Copy-file-to-local"><a href="#Copy-file-to-local" class="headerlink" title="Copy file to local"></a>Copy file to local</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="User-and-user-setup"><a href="#User-and-user-setup" class="headerlink" title="User and user setup"></a>User and user setup</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">who</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Setup-a-new-user"><a href="#Setup-a-new-user" class="headerlink" title="Setup a new user"></a>Setup a new user</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd [username]</span><br></pre></td></tr></table></figure>
+
+<h3 id="Change-to-other-user"><a href="#Change-to-other-user" class="headerlink" title="Change to other user"></a>Change to other user</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">su - user2</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Shiling Liang</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/notes-on-codes/js/utils.js"></script><script src="/notes-on-codes/js/motion.js"></script><script src="/notes-on-codes/js/schemes/muse.js"></script><script src="/notes-on-codes/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
