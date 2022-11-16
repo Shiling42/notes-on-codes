@@ -123,18 +123,29 @@ With[
 
 ### Animation
 
-```mathematica
+````mathematica
 plots = Table[
    Plot[
     ], {t, 0, 30, .2}];
 Export["DecayingWave.gif",plots,"AnimationRepetitions"-> \
 \[Infinity]]
 ListAnimate[plots]
+
+### 3D plot without light
+```mathematica
+PlotStyle -> Directive[Black, Glow[RGBColor["#1f78b4"]], Opacity[.6]]
 ```
+
+### 3D plot without clipping
+```Mathematica
+ClippingStyle -> None
+```
+````
 
 ## Functional programming
 
 ### Basic use of function
+
 ```Mathematica
 f[x_,y_] := 
 ```
