@@ -1,5 +1,7 @@
 ---
+layout: default
 title: LaTeX
+nav_order: 2
 ---
 
 ## Math

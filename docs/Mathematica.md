@@ -1,11 +1,14 @@
 ---
+layout: default
 title: Mathematica
+nav_order: 2
 ---
+{% raw %}
 ## Plot Tricks
 
 ### Unified style function
 
-```Mathematica
+```
 (*for many lines, e.g. stochastic trajectories*)
 Styles = {
    PlotStyle -> {Thickness[0.005], Opacity[0.4]},
@@ -17,7 +20,7 @@ Styles = {
 Evaluate@Styles
 ```
 
-```Mathematica
+```
 Styles = {PlotTheme -> {"Scientific", "DashedLines"},
    PlotTheme -> {"Scientific", "DashedLines"},
    LabelStyle -> 
@@ -27,54 +30,54 @@ Styles = {PlotTheme -> {"Scientific", "DashedLines"},
 
 ### Theme with linestyle
 
-```Mathematica
+```
 PlotTheme -> {"Scientific", "DashedLines"}
 ```
 
 ### Vertical lines in a plot
 
-```mathematica
-Epilog -> {Line[{{x0,y0}, {x1,y1}}]}
+```
+Epilog -> { Line[ {{x0,y0}, {x1,y1}} ] }
 ```
 
 ### ListPlot: dots -> line
 
-```Mathematica
+```
 Joined -> True
 ```
 ### Legend size
 
-```mathematica
+```
 LabelStyle -> 
  Directive[FontFamily -> "Helvetica", Black, FontSize -> 15]
 ```
 
 ### Colorbar Legend
 
-```mathematica
+```
 PlotLegends -> BarLegend[Automatic, LegendLabel -> "z"]
 ```
 
 ### Frame ticks and labels size
 
-```mathematica
+```
 FrameStyle -> Directive[Black, FontSize -> 15, Thick]
 ```
 
 ### Unify and resize fig
 
-```mathematica
+```
 Rasterize[,RasterSize -> 15]
 ```
 
 ### Latex input
 
-```Mathematica
+```
 << MaTeX`
 MaTeX["\sin{x}"]
 ```
 ### Multiple figures in a single plot
-```Mathematica
+```
 Column@{
 Row@{
 }
@@ -83,20 +86,20 @@ Row@{
 
 ### Plot only on a certain region
 Method 1: `ImplicitRegion`
-```Mathematica
+```
 {x0, y0} \[Element] ImplicitRegion[.7 <= x0^2 + y0^2 <= 1, {x0, y0}]
 ```
 
 Method 2: `RegionFunction`
 
-```Mathematica
+```
 RegionFunction -> 
  Function[{x, y}, .64 < x^2 + y^2 < 1]
 ```
 
 
 ### Stream and contour plot 
-```Mathematica
+```
 With[
   {reactions = { , },
   Show[
@@ -123,7 +126,7 @@ With[
 
 ### Animation
 
-````mathematica
+````
 plots = Table[
    Plot[
     ], {t, 0, 30, .2}];
@@ -132,12 +135,12 @@ Export["DecayingWave.gif",plots,"AnimationRepetitions"-> \
 ListAnimate[plots]
 
 ### 3D plot without light
-```mathematica
+```
 PlotStyle -> Directive[Black, Glow[RGBColor["#1f78b4"]], Opacity[.6]]
 ```
 
 ### 3D plot without clipping
-```Mathematica
+```
 ClippingStyle -> None
 ```
 ````
@@ -146,12 +149,12 @@ ClippingStyle -> None
 
 ### Basic use of function
 
-```Mathematica
+```
 f[x_,y_] := 
 ```
 
 ### Map and apply
-```Mathematica
+```
 f[x_,y_] :=
 f@@{x,y}
 
@@ -160,14 +163,14 @@ f/@x
 ```
 
 ### For loop
-```Mathematica
+```
 For[With{},..,..]
 ```
 ## Math and Models 
 
 
 ### Uniform unicycle Laplacian operator
-```Mathematica
+```
 cycle[n_] := 
  Table[If[i == j, -kf - kb, 
    If[i == Mod[(j + 1), n] || i == j + 1, kb, 
@@ -175,7 +178,8 @@ cycle[n_] :=
 ```
 
 ### Basin of attraction
-```Mathematica
+
+```
 tmax = 10;
 tol = 0.01;
 (*Solution to ODE that maps t to {x[t],y[t]}*)
@@ -211,7 +215,7 @@ Manipulate[
 
 The "rule" replacement replace the variables after evaluated, however, the "ruledelayed" replace the variables and then the evaluation starts.
 
-```Mathematica
+```
 In[3]:= {x, x, x} /. x :> RandomReal[]
 {x, x, x} /. x -> RandomReal[]
 
@@ -222,6 +226,7 @@ Out[4]= {0.541989, 0.541989, 0.541989}
 
 ### Joint string and variables
 
-```mathematica
+```
 dTlist = Table[StringForm["\[CapitalDelta]T=``", i ], {i, 1, 3}];
 ```
+{% endraw %}

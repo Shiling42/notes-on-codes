@@ -1,5 +1,7 @@
 ---
+layout: default
 title: Python
+nav_order: 2
 ---
 
 ## Basics
@@ -51,7 +53,11 @@ def plotfunc()
 
 ### Histogram
 
+
+
 ### Styles: dashed line style cycle
 
+
+## Pandoc
 
 ## Math

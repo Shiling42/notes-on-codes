@@ -1,7 +1,9 @@
 ---
+layout: default
 title: bash
+author: Shiling Liang
+nav_order: 2
 ---
-
 
 
 ## Remote 
