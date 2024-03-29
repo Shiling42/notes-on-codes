@@ -1,5 +1,7 @@
 ---
 layout: home
-title: Githubook!
+title: Gitbook style!
 permalink: /
 ---
+
+Cheatsheet on codes.
