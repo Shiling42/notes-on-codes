@@ -90,7 +90,5 @@ mermaid: true
 \begin{abstract}
 \end{abstract}
 \end{CJK*}
-
-
 \begin{document}
-'''
+```

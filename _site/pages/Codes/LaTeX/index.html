@@ -85,7 +85,7 @@
                             </a>
                             
                                 
-                                    <ul><li><a href="#math" onclick="mobilePageScrollToAnchor(this)" >Math</a><ul><li><a href="#reaction-arrows" onclick="mobilePageScrollToAnchor(this)" >reaction arrows</a></li></ul></li><li><a href="#general" onclick="mobilePageScrollToAnchor(this)" >General</a><ul><li><a href="#color-text" onclick="mobilePageScrollToAnchor(this)" >Color text</a></li><li><a href="#switch-to-single-column-appendix" onclick="mobilePageScrollToAnchor(this)" >Switch to single column appendix</a></li></ul></li><li><a href="#figures" onclick="mobilePageScrollToAnchor(this)" >Figures</a><ul><li><a href="#basic-figure" onclick="mobilePageScrollToAnchor(this)" >Basic figure</a></li><li><a href="#subfigure" onclick="mobilePageScrollToAnchor(this)" >Subfigure</a></li></ul></li></ul>
+                                    <ul><li><a href="#math" onclick="mobilePageScrollToAnchor(this)" >Math</a><ul><li><a href="#reaction-arrows" onclick="mobilePageScrollToAnchor(this)" >reaction arrows</a></li></ul></li><li><a href="#general" onclick="mobilePageScrollToAnchor(this)" >General</a><ul><li><a href="#color-text" onclick="mobilePageScrollToAnchor(this)" >Color text</a></li><li><a href="#switch-to-single-column-appendix" onclick="mobilePageScrollToAnchor(this)" >Switch to single column appendix</a></li></ul></li><li><a href="#figures" onclick="mobilePageScrollToAnchor(this)" >Figures</a><ul><li><a href="#basic-figure" onclick="mobilePageScrollToAnchor(this)" >Basic figure</a></li><li><a href="#subfigure" onclick="mobilePageScrollToAnchor(this)" >Subfigure</a></li></ul></li><li><a href="#templates" onclick="mobilePageScrollToAnchor(this)" >Templates</a><ul><li><a href="#paper-for-notes-compact" onclick="mobilePageScrollToAnchor(this)" >Paper for notes (compact)</a></li><li><a href="#revetex-with-chinese-name" onclick="mobilePageScrollToAnchor(this)" >Revetex (with Chinese name)</a></li></ul></li></ul>
 
                                 
                             
@@ -211,6 +211,38 @@
     <span class="k">\caption</span><span class="p">{}</span> 
     <span class="k">\label</span><span class="p">{</span>fig:1<span class="p">}</span>
 <span class="nt">\end{figure}</span>
+</code></pre></div></div>
+
+<h2 id="templates">Templates</h2>
+<h3 id="paper-for-notes-compact">Paper for notes (compact)</h3>
+<div class="language-LaTeX highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\documentclass</span><span class="na">[11pt,floatfix,twocolumn]</span><span class="p">{</span>paper<span class="p">}</span>
+
+<span class="c">%\linespread{1.5}</span>
+<span class="k">\usepackage</span><span class="na">[margin=1.in]</span><span class="p">{</span>geometry<span class="p">}</span>
+
+<span class="k">\usepackage</span><span class="p">{</span>bm<span class="p">}</span>
+<span class="k">\usepackage</span><span class="p">{</span>color<span class="p">}</span>
+
+<span class="k">\usepackage</span><span class="p">{</span>amsmath,amsfonts,amsthm,amssymb,appendix,xcolor,comment,mathtools,braket,empheq,hyperref,graphicx<span class="p">}</span>
+
+</code></pre></div></div>
+<h3 id="revetex-with-chinese-name">Revetex (with Chinese name)</h3>
+<div class="language-LaTeX highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\documentclass</span><span class="na">[aps,reprint,amsmath,amssymb,groupaddress,superscriptaddress,prl]</span><span class="p">{</span>revtex4-2<span class="p">}</span>
+
+<span class="k">\usepackage</span><span class="p">{</span>amsmath, amsfonts, amssymb, bm, color, graphicx, soul, hyperref, CJK, xcolor, mathtools, lipsum<span class="p">}</span>
+
+<span class="nt">\begin{document}</span>
+<span class="nt">\begin{CJK*}</span><span class="p">{</span>UTF8<span class="p">}{</span>gbsn<span class="p">}</span>
+
+<span class="k">\title</span><span class="p">{}</span>
+<span class="k">\author</span><span class="p">{</span>Shiling Liang (梁师翎)<span class="p">}</span>
+<span class="k">\email</span><span class="p">{</span>shiling.liang@epfl.ch<span class="p">}</span>
+<span class="k">\affiliation</span><span class="p">{}</span>
+
+<span class="nt">\begin{abstract}</span>
+<span class="nt">\end{abstract}</span>
+<span class="nt">\end{CJK*}</span>
+<span class="nt">\begin{document}</span>
 </code></pre></div></div>
 </section>
             </div><div class="search-results">
@@ -420,12 +452,12 @@ window.MathJax = {
     },
     "file": {
         "path": "_pages/Codes/LaTeX.md",
-        "mtime": "2024-03-29 01:53:45 +0100",
+        "mtime": "2024-04-03 15:33:48 +0200",
         "type": "markdown"
     },
     "gitbook": {
         "version": "3.2.3",
-        "time": "2024-03-29 01:53:45 +0100"
+        "time": "2024-04-03 15:33:48 +0200"
     },
     "basePath": "/notes-on-codes",
     "book": {
