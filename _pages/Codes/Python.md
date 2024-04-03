@@ -57,6 +57,11 @@ def plotfunc()
 ### Histogram
 
 
+### Boxplot
+```python
+plt.boxplot(data, patch_artist=True, boxprops=dict(facecolor='lightblue'),widths=0.6)
+```
+
 
 ### Styles: dashed line style cycle
 
