@@ -15,10 +15,18 @@ convert '1' to '001' str
 f'{i:03}'
 ```
 
-### Lambda function
+Lambda function
 ```python
 max_vb = lambda x,y: (x/y-1)/(x/y+1);
 ```
+
+For loop index
+```python
+for idx, x in enumerate(xs):
+```
+
+## Numpy tricks
+
 
 ## Plot
 
