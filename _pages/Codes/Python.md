@@ -30,6 +30,14 @@ for idx, x in enumerate(xs):
 
 ## Plot
 
+### Good-looking Plots
+Some initializations setups
+```python
+# set global plot fontsize
+plt.rcParams.update({'font.size': 15})
+plt.rcParams["text.usetex"] = True
+```
+
 ### Plot in function
 
 ```python
