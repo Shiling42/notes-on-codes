@@ -58,7 +58,13 @@ mermaid: true
     \label{fig:1}
 \end{figure}
 ```
+## LaTeX Diff
 
+### Don't show deletion / change color of addition
+```LaTeX
+\renewcommand{\DIFdel}[1]{}
+\renewcommand{\DIFadd}[1]{\textcolor{blue}{#1}}
+```
 ## Templates
 ### Paper for notes (compact)
 ```LaTeX
